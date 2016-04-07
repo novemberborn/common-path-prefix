@@ -9,7 +9,7 @@
   "scripts": {
     "coverage": "nyc npm test",
     "test": "ava",
-    "posttest": "standard"
+    "posttest": "as-i-preach"
   },
   "repository": {
     "type": "git",
@@ -22,8 +22,8 @@
   },
   "homepage": "https://github.com/novemberborn/common-path-prefix#readme",
   "devDependencies": {
+    "@novemberborn/as-i-preach": "^2.0.1",
     "ava": "^0.14.0",
-    "nyc": "^6.0.0",
-    "standard": "^6.0.4"
+    "nyc": "^6.0.0"
   }
 }
