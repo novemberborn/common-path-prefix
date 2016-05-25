@@ -23,7 +23,7 @@
   "homepage": "https://github.com/novemberborn/common-path-prefix#readme",
   "devDependencies": {
     "@novemberborn/as-i-preach": "^2.0.1",
-    "ava": "^0.14.0",
+    "ava": "^0.15.0",
     "nyc": "^6.0.0"
   }
 }
