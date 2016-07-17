@@ -24,6 +24,6 @@
   "devDependencies": {
     "@novemberborn/as-i-preach": "^4.0.1",
     "ava": "^0.15.0",
-    "nyc": "^6.0.0"
+    "nyc": "^7.0.0"
   }
 }
