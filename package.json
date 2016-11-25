@@ -24,7 +24,8 @@
   "devDependencies": {
     "@novemberborn/as-i-preach": "^5.0.0",
     "ava": "^0.17.0",
-    "nyc": "^8.3.0"
+    "babel-plugin-istanbul": "^3.0.0",
+    "nyc": "^10.0.0"
   },
   "greenkeeper": {
     "ignore": [
