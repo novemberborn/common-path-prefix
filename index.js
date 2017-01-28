@@ -8,8 +8,8 @@ module.exports = function commonPathPrefix (paths, sep) {
     sep = m[0]
   }
 
-  var maxLength = paths[0].lastIndexOf(sep)
-  var prefix = paths[0].substr(0, maxLength + 1)
+  var prefix = paths[0]
+  var maxLength = prefix.length
   for (var i = 0; i < paths.length; i++) {
     var lastSep = -1
     for (var j = 0; j < maxLength; j++) {
