@@ -19,7 +19,7 @@ module.exports = function commonPathPrefix (paths, sep) {
       if (matchArray[j] !== prefix[j]) {
         maxLength = j
       }
-      if (maxLength < 0) {
+      if (maxLength === 0) {
         return ''
       }
     }
