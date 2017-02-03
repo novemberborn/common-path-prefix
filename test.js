@@ -36,3 +36,7 @@ test('the file separator can be specified', t => {
   t.is(commonPathPrefix(['\\foo\\bar', '\\baz\\qux'], '/'), '')
   t.is(commonPathPrefix(['foo$bar$baz', 'foo$bar$qux'], '$'), 'foo$bar$')
 })
+
+test('the file separator can be a multi-byte string', t => {
+  t.is(commonPathPrefix(['foo👼bar👼baz', 'foo👼bar👼qux'], '👼'), 'foo👼bar👼')
+})
