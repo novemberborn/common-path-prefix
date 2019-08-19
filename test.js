@@ -1,6 +1,5 @@
 import test from 'ava'
-
-import commonPathPrefix from './'
+import commonPathPrefix from '.'
 
 test('returns an empty string if there is no common prefix', t => {
   t.is(commonPathPrefix(['foo', 'bar'], '/'), '')

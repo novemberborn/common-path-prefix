@@ -1,27 +1,31 @@
 # common-path-prefix
 
 Computes the longest prefix string that is common to each path, excluding the
-base component. Tested with Node 0.10 and above.
+base component. Tested with Node 8 and above.
 
 ## Installation
 
 ```
-npm install --save common-path-prefix
+npm install common-path-prefix
 ```
 
 ## Usage
 
 The module has one default export, the `commonPathPrefix` function:
 
+```ts
+import commonPathPrefix from 'common-path-prefix';
+```
+or
 ```js
-var commonPathPrefix = require('common-path-prefix')
+const commonPathPrefix = require('common-path-prefix');
 ```
 
 Call `commonPathPrefix()` with an array of paths (strings) and an optional
 separator character:
 
 ```js
-var paths = ['templates/main.handlebars', 'templates/_partial.handlebars']
+const paths = ['templates/main.handlebars', 'templates/_partial.handlebars']
 
 commonPathPrefix(paths, '/') // returns 'templates/'
 ```

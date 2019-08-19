@@ -21,11 +21,24 @@
     "url": "https://github.com/novemberborn/common-path-prefix/issues"
   },
   "homepage": "https://github.com/novemberborn/common-path-prefix#readme",
+  "keywords": [
+    "common",
+    "path",
+    "directory",
+    "dir",
+    "file",
+    "root",
+    "typescript",
+    "common prefix",
+    "common path",
+    "common path start",
+    "common root"
+  ],
   "devDependencies": {
-    "@novemberborn/as-i-preach": "^5.0.0",
-    "ava": "^0.17.0",
-    "babel-plugin-istanbul": "^3.0.0",
-    "nyc": "^10.0.0"
+    "@novemberborn/as-i-preach": "^11.0.0",
+    "ava": "^2.3.0",
+    "babel-plugin-istanbul": "^5.2.0",
+    "nyc": "^14.1.1"
   },
   "greenkeeper": {
     "ignore": [
