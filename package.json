@@ -7,9 +7,7 @@
     "index.js"
   ],
   "scripts": {
-    "coverage": "nyc npm test",
-    "test": "ava",
-    "posttest": "standard"
+    "test": "standard && nyc ava"
   },
   "repository": {
     "type": "git",
