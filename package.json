@@ -4,6 +4,7 @@
   "description": "Computes the longest prefix string that is common to each path, excluding the base component",
   "main": "index.js",
   "files": [
+    "index.d.ts",
     "index.js"
   ],
   "scripts": {
