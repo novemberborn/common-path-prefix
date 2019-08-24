@@ -37,7 +37,6 @@
   "devDependencies": {
     "@novemberborn/as-i-preach": "^11.0.0",
     "ava": "^2.3.0",
-    "babel-plugin-istanbul": "^5.2.0",
     "nyc": "^14.1.1"
   }
 }
