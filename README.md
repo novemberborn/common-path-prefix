@@ -41,6 +41,7 @@ An empty string is returned if no common prefix exists:
 
 ```js
 commonPathPrefix(['foo/bar', 'baz/qux']) // returns ''
+commonPathPrefix(['foo/bar']) // returns ''
 ```
 
 Note that the following *does* have a common prefix:

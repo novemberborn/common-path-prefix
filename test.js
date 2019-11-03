@@ -6,10 +6,10 @@ test('returns an empty string if there is no common prefix', t => {
   t.is(commonPathPrefix([]), '')
   t.is(commonPathPrefix(['foo', 'bar']), '')
   t.is(commonPathPrefix(['', '']), '')
+  t.is(commonPathPrefix(['/foo']), '')
 })
 
 test('returns the longest common prefix', t => {
-  t.is(commonPathPrefix(['/foo']), '/foo/')
   t.is(commonPathPrefix(['/foo/', '/foo/']), '/foo/')
   t.is(commonPathPrefix(['/foo/', '/bar/']), '/')
   t.is(commonPathPrefix(['/foo/bar/baz/qux', '/foo/bar/baz/quux']), '/foo/bar/baz/')
