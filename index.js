@@ -16,17 +16,18 @@ module.exports = function commonPathPrefix (paths, sep = determineSeparator(path
 
   const parts = first.split(sep)
 
-  let prefix = parts.length
-  for (const p of paths) {
-    const compare = p.split(sep)
-    for (let i = 0; i < prefix; i++) {
+  let endOfPrefix = parts.length
+  for (const path of remaining) {
+    const compare = path.split(sep)
+    for (let i = 0; i < endOfPrefix; i++) {
       if (compare[i] !== parts[i]) {
-        prefix = i
+        endOfPrefix = i
       }
     }
 
-    if (prefix === 0) break
+    if (endOfPrefix === 0) return ''
   }
 
-  return prefix === 0 ? '' : parts.slice(0, prefix).join(sep) + sep
+  const prefix = parts.slice(0, endOfPrefix).join(sep)
+  return prefix.endsWith(sep) ? prefix : prefix + sep
 }
