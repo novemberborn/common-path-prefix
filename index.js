@@ -1,12 +1,18 @@
 'use strict'
+const { sep: DEFAULT_SEPARATOR } = require('path')
 
-module.exports = function commonPathPrefix ([first, ...paths], sep) {
-  if (!sep) {
-    const m = /(\/|\\)/.exec(first)
-    if (!m) return '' // The first path did not contain any directory components. Bail now.
-
-    sep = m[0]
+const determineSeparator = paths => {
+  for (const path of paths) {
+    const match = /(\/|\\)/.exec(path)
+    if (match !== null) return match[0]
   }
+
+  return DEFAULT_SEPARATOR
+}
+
+module.exports = function commonPathPrefix (paths, sep = determineSeparator(paths)) {
+  const [first = '', ...remaining] = paths
+  if (first === '') return ''
 
   const parts = first.split(sep)
 
