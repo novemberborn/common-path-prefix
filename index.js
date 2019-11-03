@@ -12,7 +12,7 @@ const determineSeparator = paths => {
 
 module.exports = function commonPathPrefix (paths, sep = determineSeparator(paths)) {
   const [first = '', ...remaining] = paths
-  if (first === '') return ''
+  if (first === '' || remaining.length === 0) return ''
 
   const parts = first.split(sep)
 
